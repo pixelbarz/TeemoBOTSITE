@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comandos do TeemoBOT, manual completo</title>
+  <meta name="description" content="Manual dos 18 comandos do TeemoBOT com nome, sintaxe, parâmetros, tempo de espera, permissões, exemplos e observações. Busca ao vivo e filtro por categoria.">
+  <link rel="canonical" href="https://pixelbarz.github.io/TeemoBOTSITE/comandos/">
+  <meta name="theme-color" content="#0b2118">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="TeemoBOT">
+  <meta property="og:url" content="https://pixelbarz.github.io/TeemoBOTSITE/comandos/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Comandos do TeemoBOT, manual completo">
+  <meta property="og:description" content="18 comandos com sintaxe, parâmetros, tempo de espera, permissões e exemplos. Busca ao vivo e filtro por categoria.">
+  <meta property="og:image" content="https://pixelbarz.github.io/TeemoBOTSITE/assets/images/site-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Prévia do site TeemoBOT com arte oficial de Teemo, de League of Legends">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Comandos do TeemoBOT, manual completo">
+  <meta name="twitter:description" content="18 comandos com sintaxe, parâmetros, tempo de espera, permissões e exemplos.">
+  <meta name="twitter:image" content="https://pixelbarz.github.io/TeemoBOTSITE/assets/images/site-preview.jpg">
+
+  <link rel="icon" href="../assets/images/teemo-icon.png" type="image/png" sizes="128x128">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/commands.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-root="../" data-page="comandos">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../" aria-label="TeemoBOT, página inicial">
+        <img class="brand__mark" src="../assets/images/teemo-icon.png" alt="" width="38" height="38">
+        <span class="brand__word">Teemo<span>BOT</span></span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__box" aria-hidden="true"></span>
+        <span class="visually-hidden" data-menu-label>Abrir menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-site-nav aria-label="Navegação principal">
+        <a class="site-nav__link" data-nav="home" href="../">Início</a>
+        <a class="site-nav__link" data-nav="bot" href="../bot/">O bot</a>
+        <a class="site-nav__link" data-nav="comandos" href="./">Comandos</a>
+        <a class="site-nav__link" data-nav="criador" href="../criador/">Criador</a>
+        <a class="site-nav__link" data-nav="privacidade" href="../privacidade/">Privacidade</a>
+        <a class="site-nav__cta" data-invite-link aria-disabled="true" title="O convite público ainda não foi publicado.">Convite em breve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="page-hero commands-hero" aria-labelledby="commands-title">
+      <div class="wrap page-hero__grid">
+        <div class="commands-hero__copy">
+          <span class="field-label">Manual</span>
+          <h1 id="commands-title">Comandos do TeemoBOT.</h1>
+          <div class="commands-hero__search">
+            <form class="search-form" id="command-search-form" role="search" action="./" method="get">
+              <label class="visually-hidden" for="command-search">Buscar comando</label>
+              <div class="search-field">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 4.5 4.5"/></svg>
+                <input type="search" id="command-search" name="q" placeholder="Nome, categoria, parâmetro ou exemplo" autocomplete="off" spellcheck="false" aria-describedby="search-hint">
+              </div>
+              <button class="btn btn--dark" type="submit">Filtrar</button>
+            </form>
+            <p class="search-hint" id="search-hint">A busca acontece enquanto você digita. Pressione <kbd>/</kbd> em qualquer ponto da página para voltar ao campo e <kbd>Esc</kbd> para limpar.</p>
+          </div>
+        </div>
+        <div class="page-hero__aside commands-hero__aside">
+          <span class="field-label">Antes de usar</span>
+          <p>18 comandos. O manual mostra o que cada um faz, os valores, o tempo de espera e as permissões.</p>
+          <div class="callout callout--dart commands-hero__note">
+            <strong>Todos os comandos desta página estão disponíveis.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper commands-section" aria-labelledby="results-title">
+      <div class="wrap commands-layout">
+        <div class="commands-sidebar" role="group" aria-label="Filtros do manual">
+          <div class="filter-panel">
+            <div class="filter-panel__head">
+              <h2>Categorias</h2>
+              <span>filtro</span>
+            </div>
+            <div class="filter-list" id="category-filters" role="group" aria-label="Filtrar comandos por categoria"></div>
+            <div class="filter-clear">
+              <button class="btn btn--dark" type="button" data-clear-filters>Limpar filtros</button>
+            </div>
+          </div>
+          <p class="sidebar-note">Os filtros também ficam na URL. Você pode compartilhar uma busca ou uma categoria específica sem perder o recorte.</p>
+        </div>
+
+        <div class="commands-main">
+          <div class="commands-toolbar">
+            <h2 id="results-title">Todos os comandos</h2>
+            <div class="commands-toolbar__actions">
+              <span class="result-count" id="result-count" role="status" aria-live="polite">18 comandos</span>
+              <button class="toolbar-btn" type="button" id="expand-all" aria-label="Expandir todos os comandos">Expandir tudo</button>
+            </div>
+          </div>
+
+          <div class="command-grid" id="command-list">
+            <noscript>
+              <div class="command-card__empty">
+                <h3>Ative o JavaScript</h3>
+                <p>A busca e os filtros precisam de JavaScript para funcionar. Ative o JavaScript no navegador para usar esta página.</p>
+              </div>
+            </noscript>
+          </div>
+
+          <div class="command-card__empty" id="command-empty" hidden>
+            <div>
+              <h3>Nenhum comando encontrado</h3>
+              <p>Tente outro termo ou remova o filtro de categoria. A busca considera nome, descrição, parâmetros, exemplos e observações.</p>
+              <button class="btn btn--dark" type="button" data-clear-filters>Limpar busca e filtros</button>
+            </div>
+          </div>
+
+          <p class="commands-note"><strong>Como ler o comando:</strong> parâmetros obrigatórios aparecem sem colchetes na sintaxe; opcionais aparecem entre colchetes. O tempo de espera é por membro e por servidor quando indicado.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="../" aria-label="TeemoBOT, página inicial">
+            <img class="brand__mark" src="../assets/images/teemo-icon.png" alt="" width="38" height="38">
+            <span class="brand__word">Teemo<span>BOT</span></span>
+          </a>
+          <p>Economia, recompensas, moderação e um manual de comandos. Um projeto independente para servidores de Discord.</p>
+          <p class="footer-disclaimer">TeemoBOT é um projeto de fã, não oficial, criado sob a política “Legal Jibber Jabber” da Riot Games. Usa ativos de propriedade da Riot Games apenas como referência visual. A Riot Games não endossa nem patrocina este projeto. League of Legends e Teemo são marcas da Riot Games.</p>
+          <p class="footer-credit">Artes oficiais de Teemo e Bandle City © Riot Games. Fontes: <a href="https://ddragon.leagueoflegends.com/" target="_blank" rel="noopener noreferrer">Data Dragon</a> e <a href="https://universe.leagueoflegends.com/en_US/region/bandle-city/" target="_blank" rel="noopener noreferrer">Universe of League of Legends</a>.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Navegar</h2>
+          <ul>
+            <li><a href="../">Início</a></li>
+            <li><a href="../bot/">O bot</a></li>
+            <li><a href="./">Comandos</a></li>
+            <li><a href="../criador/">Criador</a></li>
+            <li><a href="../privacidade/">Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Manual</h2>
+          <ul>
+            <li><a href="./?categoria=economia">Economia</a></li>
+            <li><a href="./?categoria=diversao">Diversão</a></li>
+            <li><a href="./?categoria=moderacao">Moderação</a></li>
+            <li><a href="./?categoria=administracao">Administração</a></li>
+            <li><a href="./?categoria=utilidade">Utilidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Acompanhar</h2>
+          <ul data-social-list>
+            <li><span class="footer-link--soon"><span>GitHub</span><small>em breve</small></span></li>
+            <li><span class="footer-link--soon"><span>Discord</span><small>em breve</small></span></li>
+          </ul>
+          <ul class="footer-col__extra">
+            <li><span class="footer-link--soon"><span>Convite</span><small>em breve</small></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> TeemoBOT. Projeto independente.</p>
+        <p>Feito por PixelBarz.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/icons.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../data/commands.js"></script>
+  <script src="../js/commands.js"></script>
+</body>
+</html>

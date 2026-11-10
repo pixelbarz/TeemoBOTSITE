@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TeemoBOT, economia e moderação para Discord</title>
+  <meta name="description" content="TeemoBOT é um bot de Discord independente e não oficial com economia por servidor, recompensa diária, loja, inventário, ranking, diversão e moderação. Manual completo de comandos.">
+  <link rel="canonical" href="https://pixelbarz.github.io/TeemoBOTSITE/">
+  <meta name="theme-color" content="#0b2118">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TeemoBOT">
+  <meta property="og:url" content="https://pixelbarz.github.io/TeemoBOTSITE/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="TeemoBOT, economia e moderação para Discord">
+  <meta property="og:description" content="Economia por servidor, recompensas, loja, ranking e comandos de moderação. Manual completo de comandos.">
+  <meta property="og:image" content="https://pixelbarz.github.io/TeemoBOTSITE/assets/images/site-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Prévia do site TeemoBOT com arte oficial de Teemo, de League of Legends">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TeemoBOT, economia e moderação para Discord">
+  <meta name="twitter:description" content="Economia por servidor, recompensas, loja, ranking e moderação. Manual completo de comandos.">
+  <meta name="twitter:image" content="https://pixelbarz.github.io/TeemoBOTSITE/assets/images/site-preview.jpg">
+
+  <link rel="icon" href="assets/images/teemo-icon.png" type="image/png" sizes="128x128">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "TeemoBOT",
+      "inLanguage": "pt-BR",
+      "description": "Bot de Discord independente com economia por servidor, recompensas, loja, inventário, ranking e moderação."
+    }
+  </script>
+</head>
+<body data-root="./" data-page="home">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="TeemoBOT, página inicial">
+        <img class="brand__mark" src="assets/images/teemo-icon.png" alt="" width="38" height="38">
+        <span class="brand__word">Teemo<span>BOT</span></span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__box" aria-hidden="true"></span>
+        <span class="visually-hidden" data-menu-label>Abrir menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-site-nav aria-label="Navegação principal">
+        <a class="site-nav__link" data-nav="home" href="./">Início</a>
+        <a class="site-nav__link" data-nav="bot" href="bot/">O bot</a>
+        <a class="site-nav__link" data-nav="comandos" href="comandos/">Comandos</a>
+        <a class="site-nav__link" data-nav="criador" href="criador/">Criador</a>
+        <a class="site-nav__link" data-nav="privacidade" href="privacidade/">Privacidade</a>
+        <a class="site-nav__cta" data-invite-link aria-disabled="true" title="O convite público ainda não foi publicado.">Convite em breve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero home-hero" aria-labelledby="hero-title">
+      <div class="hero__spores" aria-hidden="true">
+        <span class="spore"></span>
+        <span class="spore"></span>
+        <span class="spore"></span>
+        <span class="spore"></span>
+        <span class="spore"></span>
+      </div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <span class="field-label reveal">Bot de Discord</span>
+          <h1 class="hero__title reveal" id="hero-title" aria-label="TeemoBOT">
+            <span class="hero__title-line">Teemo</span>
+            <span class="hero__title-bot">BOT</span>
+          </h1>
+          <p class="hero__lead reveal">Um bot de Discord com economia, recompensas, loja, inventário e moderação. As moedas são fictícias e ficam separadas por servidor. O manual mostra cada comando, os valores e as permissões.</p>
+          <div class="hero__actions reveal">
+            <a class="btn" href="bot/">Conhecer o bot</a>
+            <a class="btn btn--ghost" href="comandos/">Abrir os comandos</a>
+          </div>
+          <div class="invite-slot reveal">
+            <span class="invite-slot__label">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="10" width="14" height="10" rx="1"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14v2"/></svg>
+              Convite
+            </span>
+            <a class="btn btn--soon" data-invite-link aria-disabled="true" title="O convite público ainda não foi publicado.">Convite em breve</a>
+            <p class="invite-slot__text">O convite ainda não está disponível. O manual e a página do bot já podem ser consultados.</p>
+          </div>
+          <dl class="hero__facts reveal" aria-label="Números do projeto">
+            <div class="hero__fact">
+              <dt>Comandos</dt>
+              <dd>18</dd>
+            </div>
+            <div class="hero__fact">
+              <dt>Categorias</dt>
+              <dd>5</dd>
+            </div>
+            <div class="hero__fact">
+              <dt>Conta Riot</dt>
+              <dd>não precisa</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__scene reveal">
+          <figure class="hero__art">
+            <img class="hero__illustration" src="assets/images/teemo-splash.jpg" alt="Teemo, campeão de League of Legends, em arte oficial da Riot Games" width="1215" height="717" fetchpriority="high">
+            <figcaption class="hero__art-credit">
+              <span>Teemo, arte oficial de League of Legends.</span>
+              <span>© Riot Games</span>
+            </figcaption>
+          </figure>
+          <div class="hero__tag">
+            <strong>Manual completo</strong>
+            <span>18 comandos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--moss home-cycle" aria-labelledby="cycle-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="field-label reveal">Economia</span>
+            <h2 class="reveal" id="cycle-title">Como a economia funciona.</h2>
+          </div>
+          <div class="section-head__aside reveal">
+            <p>Quatro etapas, todas com comandos disponíveis. O ciclo reinicia no dia seguinte e não tem rendimento passivo, juros ou conversão para dinheiro real.</p>
+          </div>
+        </div>
+
+        <ol class="cycle-grid">
+          <li class="cycle-step reveal">
+            <span class="cycle-step__num" aria-hidden="true">01</span>
+            <h3>Ganhar</h3>
+            <p>O <code>/diario</code> entrega de 500 a 1.000 moedas a cada 24 horas. O <code>/trabalhar</code> sorteia um emprego e paga de 150 a 350 moedas, com 1 hora de espera.</p>
+            <a class="cycle-step__cmd" href="comandos/#comando-diario">/diario e /trabalhar</a>
+          </li>
+          <li class="cycle-step reveal">
+            <span class="cycle-step__num" aria-hidden="true">02</span>
+            <h3>Guardar</h3>
+            <p>O <code>/saldo</code> mostra carteira e banco separados. O <code>/depositar</code> e o <code>/sacar</code> movem no mínimo 1 moeda, sem taxa. O banco guarda, mas não rende juros.</p>
+            <a class="cycle-step__cmd" href="comandos/#comando-saldo">/saldo, /depositar e /sacar</a>
+          </li>
+          <li class="cycle-step reveal">
+            <span class="cycle-step__num" aria-hidden="true">03</span>
+            <h3>Gastar</h3>
+            <p>O <code>/loja</code> lista os itens daquele servidor. O <code>/comprar</code> debita a carteira e o <code>/inventario</code> mostra as quantidades. A entrega de cargos não é automática.</p>
+            <a class="cycle-step__cmd" href="comandos/#comando-loja">/loja, /comprar e /inventario</a>
+          </li>
+          <li class="cycle-step reveal">
+            <span class="cycle-step__num" aria-hidden="true">04</span>
+            <h3>Ranking</h3>
+            <p>O <code>/ranking</code> soma carteira e banco e mostra os dez primeiros do servidor. O <code>/caraoucoroa</code> aposta no mínimo 10 moedas, e o <code>/transferir</code> circula saldo entre membros.</p>
+            <a class="cycle-step__cmd" href="comandos/#comando-ranking">/ranking e /caraoucoroa</a>
+          </li>
+        </ol>
+
+        <div class="callout callout--dart cycle-note reveal">
+          <strong>Tudo fica no servidor.</strong> Os valores são iguais em todos os servidores, mas loja, inventário, saldo e ranking não são compartilhados entre eles.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper home-kit" aria-labelledby="kit-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="field-label reveal">Recursos</span>
+            <h2 class="reveal" id="kit-title">O que já funciona.</h2>
+          </div>
+          <div class="section-head__aside reveal">
+            <p>Estes são os recursos disponíveis hoje, com os valores e limites de cada um.</p>
+          </div>
+        </div>
+
+        <div class="kit-grid">
+          <article class="kit-card kit-card--dark span-7 reveal">
+            <div class="kit-card__top">
+              <div>
+                <h3>Carteira, banco e recompensas</h3>
+                <p>Duas reservas separadas, resgate diário e trabalho com pagamento sorteado. O saldo fica preso ao servidor em que foi ganho.</p>
+              </div>
+              <span class="icon-frame" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M4 7.5V6a2 2 0 0 1 2-2h11"/><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5H19a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6.5A2.5 2.5 0 0 1 4 17.5Z"/><circle cx="16" cy="12" r="1.3"/></svg>
+              </span>
+            </div>
+            <div class="mini-ledger" role="group" aria-label="Valores da economia">
+              <div class="mini-ledger__row"><span>Diário</span><span class="mini-ledger__dots"></span><strong>500 a 1.000</strong></div>
+              <div class="mini-ledger__row"><span>Trabalho</span><span class="mini-ledger__dots"></span><strong>150 a 350</strong></div>
+              <div class="mini-ledger__row"><span>Cofre</span><span class="mini-ledger__dots"></span><strong>carteira + banco</strong></div>
+            </div>
+            <div class="kit-card__foot">
+              <a class="kit-card__cmd" href="comandos/#comando-saldo">/saldo, /depositar, /sacar</a>
+              <span class="kit-card__spark">moedas fictícias, sem valor real</span>
+            </div>
+          </article>
+
+          <article class="kit-card span-5 reveal">
+            <div class="kit-card__top">
+              <div>
+                <h3>Loja e inventário</h3>
+                <p>Cada servidor tem sua própria lista. A compra debita a carteira e soma o item no inventário, sem entrega automática de cargos.</p>
+              </div>
+              <span class="icon-frame" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M4 10v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9"/><path d="M3 6h18l-1 4H4Z"/><path d="M8 10v10M16 10v10"/><path d="M8 6V4h8v2"/></svg>
+              </span>
+            </div>
+            <div class="kit-card__foot">
+              <a class="kit-card__cmd" href="comandos/#comando-loja">/loja, /comprar, /inventario</a>
+            </div>
+          </article>
+
+          <article class="kit-card span-4 reveal">
+            <div class="kit-card__top">
+              <div>
+                <h3>Ranking local</h3>
+                <p>Os dez maiores saldos do servidor, somando carteira e banco. Sem ranking global e sem consulta a outros servidores.</p>
+              </div>
+              <span class="icon-frame" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0Z"/><path d="M8 6H4v1a4 4 0 0 0 4 4M16 6h4v1a4 4 0 0 1-4 4"/><path d="M12 13v4M8 20h8"/><path d="M9 17h6"/></svg>
+              </span>
+            </div>
+            <div class="kit-card__foot">
+              <a class="kit-card__cmd" href="comandos/#comando-ranking">/ranking</a>
+            </div>
+          </article>
+
+          <article class="kit-card span-4 reveal">
+            <div class="kit-card__top">
+              <div>
+                <h3>Moderação com permissão</h3>
+                <p>Banir, expulsar, silenciar e limpar mensagens. O bot confere hierarquia e permissões antes de agir, e envia o motivo das punições à auditoria do Discord.</p>
+              </div>
+              <span class="icon-frame" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 7.5 7 10 4-2.5 7-5.5 7-10V6Z"/><path d="m9.5 12 1.8 1.8 3.6-3.8"/></svg>
+              </span>
+            </div>
+            <div class="kit-card__foot">
+              <a class="kit-card__cmd" href="comandos/#comando-banir">/banir, /expulsar, /silenciar</a>
+            </div>
+          </article>
+
+          <article class="kit-card span-4 reveal">
+            <div class="kit-card__top">
+              <div>
+                <h3>Diversão</h3>
+                <p>Cara ou coroa com aposta mínima de 10 moedas e uma bola mágica que responde perguntas. Só o cara ou coroa mexe no saldo.</p>
+              </div>
+              <span class="icon-frame" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><path d="M13.5 5.2A5 5 0 1 1 18.8 14"/><path d="M9 7v.01M7 11v.01M11 11v.01"/></svg>
+              </span>
+            </div>
+            <div class="kit-card__foot">
+              <a class="kit-card__cmd" href="comandos/#comando-caraoucoroa">/caraoucoroa, /8ball</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--moss home-about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="field-label reveal">Sobre</span>
+            <h2 class="reveal" id="about-title">Um projeto independente.</h2>
+          </div>
+          <div class="section-head__aside reveal">
+            <p>TeemoBOT é feito por uma pessoa, sem equipe ou empresa. A referência a Bandle City é visual e de humor; o bot não usa dados de League of Legends.</p>
+          </div>
+        </div>
+        <div class="economy-split">
+          <div>
+            <p class="lead reveal">A ideia é simples: uma economia fácil de entender, comandos que explicam o que fazem e nenhuma surpresa no saldo.</p>
+            <p class="reveal home-about__note">O TeemoBOT começou como um projeto de portfólio e foi crescendo. Hoje ele reúne economia, recompensas, loja, inventário, ranking e moderação em um bot só.</p>
+            <div class="btn-row reveal home-about__actions">
+              <a class="btn btn--paper" href="bot/">Ler sobre o bot</a>
+              <a class="link" href="privacidade/">Ver a política de privacidade</a>
+            </div>
+          </div>
+          <div class="ledger-panel reveal" role="group" aria-label="Resumo do projeto">
+            <div class="ledger-panel__head">
+              <h3>Resumo</h3>
+              <span>do projeto</span>
+            </div>
+            <div class="ledger-list">
+              <div class="ledger-row"><span class="ledger-row__label">Comandos</span><span class="ledger-row__value">18</span></div>
+              <div class="ledger-row"><span class="ledger-row__label">Economia</span><span class="ledger-row__value">por servidor</span></div>
+              <div class="ledger-row"><span class="ledger-row__label">Conta Riot</span><span class="ledger-row__value">não precisa</span></div>
+              <div class="ledger-row"><span class="ledger-row__label">Integração com LoL</span><span class="ledger-row__value">nenhuma</span></div>
+              <div class="ledger-row"><span class="ledger-row__label">Convite público</span><span class="ledger-row__value">em breve</span></div>
+            </div>
+            <p class="ledger-panel__note">Projeto de fã, não oficial, sem vínculo com a Riot Games.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper home-manual" aria-labelledby="manual-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="field-label reveal">Comandos</span>
+            <h2 class="reveal" id="manual-title">Consulte antes de usar.</h2>
+          </div>
+          <div class="section-head__aside reveal">
+            <p>Nome, sintaxe, parâmetros, tempo de espera e permissões. A busca e o filtro por categoria estão na página de comandos.</p>
+          </div>
+        </div>
+        <div class="manual-layout">
+          <div class="manual-aside reveal">
+            <span class="field-label">18 comandos, 5 categorias</span>
+            <p>O manual cobre economia, diversão, moderação, administração e utilidade. A busca ignora acentos e procura também nos exemplos e nos parâmetros.</p>
+            <a class="btn btn--dark" href="comandos/">Abrir o manual completo</a>
+            <p class="manual-hint">Na página de comandos, pressione <kbd>/</kbd> para ir direto à busca. <kbd>Esc</kbd> limpa o campo.</p>
+          </div>
+          <div class="command-list reveal">
+            <a class="command-row" href="comandos/#comando-diario">
+              <span class="command-row__name">/diario</span>
+              <span class="command-row__desc">Recompensa aleatória entre 500 e 1.000 moedas, a cada 24 horas.</span>
+              <span class="command-row__meta"><span class="tag">Economia</span></span>
+            </a>
+            <a class="command-row" href="comandos/#comando-trabalhar">
+              <span class="command-row__name">/trabalhar</span>
+              <span class="command-row__desc">Emprego sorteado e pagamento entre 150 e 350 moedas.</span>
+              <span class="command-row__meta"><span class="tag">Economia</span></span>
+            </a>
+            <a class="command-row" href="comandos/#comando-loja">
+              <span class="command-row__name">/loja</span>
+              <span class="command-row__desc">Lista os itens cadastrados na loja daquele servidor.</span>
+              <span class="command-row__meta"><span class="tag">Economia</span></span>
+            </a>
+            <a class="command-row" href="comandos/#comando-inventario">
+              <span class="command-row__name">/inventario</span>
+              <span class="command-row__desc">Mostra os itens que um membro possui, com quantidade.</span>
+              <span class="command-row__meta"><span class="tag">Economia</span></span>
+            </a>
+            <a class="command-row" href="comandos/#comando-caraoucoroa">
+              <span class="command-row__name">/caraoucoroa</span>
+              <span class="command-row__desc">Aposta de no mínimo 10 moedas no cara ou coroa.</span>
+              <span class="command-row__meta"><span class="tag">Diversão</span></span>
+            </a>
+            <a class="command-row" href="comandos/#comando-anuncio">
+              <span class="command-row__name">/anuncio</span>
+              <span class="command-row__desc">Publica um embed em um canal de texto, com cor e menção opcionais.</span>
+              <span class="command-row__meta"><span class="tag">Administração</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section creator-section" aria-labelledby="creator-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="field-label reveal">Criador</span>
+            <h2 class="reveal" id="creator-title">Quem fez o bot.</h2>
+          </div>
+          <div class="section-head__aside reveal">
+            <p>O TeemoBOT é mantido por PixelBarz (@barz), desenvolvedor independente. A página tem a história do projeto e os links de contato.</p>
+          </div>
+        </div>
+        <div class="creator-note reveal">
+          <p class="creator-note__copy">Comecei o TeemoBOT como um projeto de portfólio e acabei juntando duas coisas que gosto: programar e jogar League of Legends. O Teemo entrou como tema e ficou.</p>
+          <div class="creator-note__side">
+            <p>Sou o PixelBarz, desenvolvedor independente. Gosto de jogar LoL e programar um pouco — o Teemo acabou virando o tema do projeto.</p>
+            <a class="btn btn--dark" href="criador/">Ver o criador</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper home-faq" aria-labelledby="faq-title">
+      <div class="wrap faq-layout">
+        <div class="faq-intro">
+          <span class="field-label reveal">Perguntas frequentes</span>
+          <h2 class="reveal" id="faq-title">Dúvidas comuns.</h2>
+          <p class="reveal">O básico antes de usar o bot. A página do bot e a política de privacidade têm os detalhes.</p>
+          <div class="btn-row reveal">
+            <a class="btn btn--dark" href="bot/">Ler sobre o bot</a>
+            <a class="btn btn--ghost" href="privacidade/">Abrir a privacidade</a>
+          </div>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>O TeemoBOT é oficial da Riot Games?</summary>
+            <div class="faq-item__body">
+              <p>Não. É um projeto de fã, não oficial, sem vínculo, patrocínio ou endosso da Riot. As artes oficiais de Teemo e Bandle City aparecem com crédito no rodapé, mas o bot não usa dados de partidas nem distribui recompensas do jogo.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Preciso de conta de League of Legends para usar?</summary>
+            <div class="faq-item__body">
+              <p>Não. Basta ter uma conta no Discord e estar em um servidor onde o bot esteja instalado. Nenhum comando pede Riot ID, dados de partida ou login em outro serviço.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>O saldo vale dinheiro ou passa de um servidor para outro?</summary>
+            <div class="faq-item__body">
+              <p>Não para as duas perguntas. A moeda é fictícia, não pode ser sacada nem convertida em dinheiro real. Carteira, banco, loja, inventário e ranking são separados por servidor e não atravessam comunidades.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Quais dados o bot guarda sobre mim?</summary>
+            <div class="faq-item__body">
+              <p>O bot usa o ID do Discord de membros e servidores. Para a economia, guarda carteira, banco, datas de diário e trabalho, itens comprados e configuração da loja. Nome de usuário, avatar, e-mail, telefone e conteúdo de conversas não são armazenados.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Quando o convite será publicado?</summary>
+            <div class="faq-item__body">
+              <p>Ainda não há data. Quando o convite estiver pronto, ele será publicado aqui.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section invite-section" id="convite" aria-labelledby="invite-title">
+      <div class="wrap">
+        <div class="invite-panel reveal">
+          <div>
+            <span class="field-label">Convite</span>
+            <h2 id="invite-title">O convite ainda não está disponível.</h2>
+            <p>O TeemoBOT ainda não está aberto para novos servidores. Quando o convite existir, ele será publicado aqui. Até lá, você pode consultar o manual e a página do bot.</p>
+            <div class="invite-panel__actions">
+              <a class="btn btn--soon" data-invite-link aria-disabled="true" title="O convite público ainda não foi publicado.">Convite em breve</a>
+              <a class="btn btn--ghost" href="comandos/">Ler o manual</a>
+            </div>
+          </div>
+          <div class="invite-panel__ticket">
+            <h3>Antes de usar</h3>
+            <p>O bot funciona com comandos de barra. A economia é fictícia e separada por servidor.</p>
+            <span class="invite-panel__stamp">em breve</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="./" aria-label="TeemoBOT, página inicial">
+            <img class="brand__mark" src="assets/images/teemo-icon.png" alt="" width="38" height="38">
+            <span class="brand__word">Teemo<span>BOT</span></span>
+          </a>
+          <p>Economia, recompensas, moderação e um manual de comandos. Um projeto independente para servidores de Discord.</p>
+          <p class="footer-disclaimer">TeemoBOT é um projeto de fã, não oficial, criado sob a política “Legal Jibber Jabber” da Riot Games. Usa ativos de propriedade da Riot Games apenas como referência visual. A Riot Games não endossa nem patrocina este projeto. League of Legends e Teemo são marcas da Riot Games.</p>
+          <p class="footer-credit">Artes oficiais de Teemo e Bandle City © Riot Games. Fontes: <a href="https://ddragon.leagueoflegends.com/" target="_blank" rel="noopener noreferrer">Data Dragon</a> e <a href="https://universe.leagueoflegends.com/en_US/region/bandle-city/" target="_blank" rel="noopener noreferrer">Universe of League of Legends</a>.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Navegar</h2>
+          <ul>
+            <li><a href="./">Início</a></li>
+            <li><a href="bot/">O bot</a></li>
+            <li><a href="comandos/">Comandos</a></li>
+            <li><a href="criador/">Criador</a></li>
+            <li><a href="privacidade/">Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Manual</h2>
+          <ul>
+            <li><a href="comandos/?categoria=economia">Economia</a></li>
+            <li><a href="comandos/?categoria=diversao">Diversão</a></li>
+            <li><a href="comandos/?categoria=moderacao">Moderação</a></li>
+            <li><a href="comandos/?categoria=administracao">Administração</a></li>
+            <li><a href="comandos/?categoria=utilidade">Utilidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Acompanhar</h2>
+          <ul data-social-list>
+            <li><span class="footer-link--soon"><span>GitHub</span><small>em breve</small></span></li>
+            <li><span class="footer-link--soon"><span>Discord</span><small>em breve</small></span></li>
+          </ul>
+          <ul class="footer-col__extra">
+            <li><span class="footer-link--soon"><span>Convite</span><small>em breve</small></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> TeemoBOT. Projeto independente.</p>
+        <p>Feito por PixelBarz.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>

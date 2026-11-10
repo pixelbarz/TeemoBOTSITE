@@ -1,0 +1,41 @@
+.privacy-hero h1 {
+  max-width: 11ch;
+}
+
+.privacy-hero .page-hero__aside p {
+  font-size: 0.9rem;
+}
+
+.privacy-hero__actions {
+  margin-top: 1rem;
+}
+
+.legal-body .callout {
+  margin-bottom: 1.6rem;
+}
+
+.legal-body .legal-section:first-of-type {
+  padding-top: 0;
+}
+
+.legal-final-note {
+  margin-top: 2rem;
+}
+
+.legal-body .legal-section h2 {
+  scroll-margin-top: calc(var(--header-h) + 1.5rem);
+}
+
+@media print {
+  .legal-toc {
+    display: none;
+  }
+
+  .legal-layout {
+    display: block;
+  }
+
+  .legal-section {
+    break-inside: avoid;
+  }
+}

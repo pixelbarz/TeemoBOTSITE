@@ -1,0 +1,79 @@
+.bot-hero .page-hero__aside {
+  padding-bottom: 0.4rem;
+}
+
+.bot-art {
+  margin: clamp(1.4rem, 3vw, 2.4rem) 0 0;
+  padding: 0.55rem;
+  background: var(--paper);
+  border: 1px solid rgba(23, 37, 29, 0.24);
+  box-shadow: var(--shadow-deep);
+}
+
+.bot-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  border: 1px solid rgba(23, 37, 29, 0.18);
+  background: var(--pine-deep);
+}
+
+.bot-art figcaption {
+  padding: 0.5rem 0.15rem 0.05rem;
+  color: var(--muted-ink);
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 620px) {
+  .bot-art img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.bot-intro .dossier {
+  align-items: start;
+}
+
+.dossier__aside-actions {
+  margin-top: 1.2rem;
+}
+
+.bot-intro .prose-block h2:first-child {
+  margin-top: 0;
+}
+
+.bot-intro .lead {
+  margin-bottom: 1.2rem;
+}
+
+.bot-features .section-head {
+  margin-bottom: 2rem;
+}
+
+.bot-features .record-list {
+  max-width: 980px;
+}
+
+.bot-economy .economy-split {
+  align-items: start;
+}
+
+.bot-progression__note {
+  margin-top: 1.2rem;
+}
+
+.bot-economy .prose-block > p {
+  color: var(--muted-ink);
+}
+
+.bot-economy .table-wrap {
+  margin-top: 1.2rem;
+}
+
+.bot-economy .callout {
+  margin-top: 1rem;
+}

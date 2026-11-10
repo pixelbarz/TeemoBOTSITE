@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pixelbarz.github.io/TeemoBOTSITE/sitemap.xml

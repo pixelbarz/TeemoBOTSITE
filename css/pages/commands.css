@@ -1,0 +1,48 @@
+.commands-hero {
+  padding-bottom: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+.commands-hero .page-hero__grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.commands-hero__copy h1 {
+  max-width: 10ch;
+}
+
+.commands-hero__search {
+  margin-top: 1.4rem;
+  max-width: 640px;
+}
+
+.commands-hero__search .search-field input {
+  background: var(--paper);
+}
+
+.commands-hero__aside {
+  align-self: end;
+}
+
+.commands-hero__aside .callout {
+  margin-top: 1rem;
+  font-size: 0.86rem;
+}
+
+.commands-section {
+  padding-top: clamp(2rem, 4vw, 3rem);
+}
+
+.commands-layout .commands-main {
+  min-width: 0;
+}
+
+.commands-note {
+  max-width: none;
+}
+
+@media (max-width: 960px) {
+  .commands-hero .page-hero__grid {
+    grid-template-columns: 1fr;
+  }
+}
